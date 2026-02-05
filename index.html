@@ -7,6 +7,9 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
     <header class="top-bar">
         <div class="logo">MyShop</div>
         <nav aria-label="Main navigation" >
@@ -17,7 +20,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <section class="hero">
             <img src="images/pexels-photo-373912.jpeg" alt="A urban landscape with skyscrapers from a helicopter perspective"
                 class="hero-image">
@@ -75,7 +78,7 @@
         <section class="newsletter">
             <h2>Subscribe to our newsletter</h2>
             <p>Get the latest updates and offers.</p>
-            <form>
+            <form aria-labelledby="newsletter-heading">
                 <label for="name">Name</label>
                 <input id="name" type="text" name="name" placeholder="Your name">
                 <label for="email">Email</label>
