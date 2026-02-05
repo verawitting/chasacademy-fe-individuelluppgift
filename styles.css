@@ -29,6 +29,7 @@ body {
 .menu {
     display: flex;
     gap: 16px;
+    text-decoration: none;
 }
 
 .menu-item a {
