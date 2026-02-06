@@ -204,6 +204,16 @@ header {
     gap: 8px;
 }
 
+@media (min-width: 500px) {
+    .newsletter {
+        text-align: center;
+        align-items: center;
+    }
+    .newsletter form {
+        width: 450px;
+    }
+}
+
 .newsletter input {
     padding: 8px;
     border: 1px solid var(--color-border);
