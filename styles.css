@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
 }
 
 :root {
@@ -36,7 +40,7 @@ body {
     top: -40px;
     left: 0;
     background: var(--color-primary);
-    color: var(--color-border);
+    color: var(--color-bg);
     padding: 8px;
     z-index: 100;
 }
@@ -71,6 +75,11 @@ header {
     text-decoration: none;
     color: var(--color-primary);
     font-size: 14px;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  font-weight: bold;
 }
 
 /* -----HERO ----- */
@@ -191,7 +200,7 @@ header {
 
 .add-to-cart:hover,
 .add-to-cart:focus-visible {
-  background-color: var(--color-button-secondary-hover);
+  background-color: var(--color-btn-secondary-hover);
 }
 
 /* ----- NEWSLETTER ----- */

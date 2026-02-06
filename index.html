@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
@@ -22,7 +23,7 @@
     </header>
     <main id="main-content">
         <section class="hero">
-            <img src="images/pexels-photo-373912.jpeg" alt="A urban landscape with skyscrapers from a helicopter perspective"
+            <img src="images/pexels-photo-373912.jpeg" alt="" aria-hidden="true"
                 class="hero-image">
             <div class="hero-text">
                 <h1>Welcome to MyShop</h1>
@@ -34,11 +35,11 @@
         <section class="content">
             <h2 class="section-title">Our Products</h2>
 
-            <ul class="products">
+            <ul class="products" aria-label="Product list">
                 <li>
                     <article class="product-card">
                         <img src="images/pexels-photo-461428.jpeg" alt="A macha tea set up, a bowl of macha power and three smaller mixing bowls"
-                            class="product-image">
+                            class="product-image" width="300" height="200" loading="lazy">
                         <h3>Headphones</h3>
                         <p class="product-description">
                             High quality headphones with amazing sound. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -80,9 +81,9 @@
             <p>Get the latest updates and offers.</p>
             <form aria-labelledby="newsletter-heading">
                 <label for="name" class="hidden">Name</label>
-                <input id="name" type="text" name="name" placeholder="Your name">
+                <input id="name" type="text" name="name" placeholder="Your name" required>
                 <label for="email" class="hidden">Email</label>
-                <input id="email" type="email" name="email" placeholder="Your email">
+                <input id="email" type="email" name="email" placeholder="Your email" required autocomplete="email">
                 <button type="submit" class="primary-button">Subscribe</button>
             </form>
         </section>
