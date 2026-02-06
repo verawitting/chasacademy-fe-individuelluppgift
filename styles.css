@@ -188,10 +188,20 @@ header {
   background-color: var(--color-button-secondary-hover);
 }
 
+/* ----- NEWSLETTER ----- */
 .newsletter {
     margin-top: 32px;
     padding: 24px;
     background-color: var(--color-surface);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .newsletter input {
@@ -199,12 +209,24 @@ header {
     border: 1px solid var(--color-border);
     border-radius: 4px;
     font-size: 14px;
-    width: 200px;
+    width: 100%;
     margin-right: 8px;
 }
 
 .newsletter input:focus-visible {
   border-color: var(--color-focus);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ----- FOOTER ----- */
