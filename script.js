@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     var items = document.querySelectorAll(".add-to-cart");
     items.forEach(function (item) {
@@ -41,3 +40,4 @@ lcpObserver.observe({
   type: "largest-contentful-paint",
   buffered: true,
 });
+
