@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", function () {
     var items = document.querySelectorAll(".add-to-cart");
     items.forEach(function (item) {
